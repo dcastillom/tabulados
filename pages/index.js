@@ -1,19 +1,14 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import HomeIcon from '@mui/icons-material/Home';
+import { IconButton } from '@mui/material';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Home page" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
-        <p>
-          Hello
-        </p>
+        <IconButton color="primary" aria-label="upload picture" component="label">
+          <HomeIcon />
+        </IconButton>
       </main>
 
     </div>
